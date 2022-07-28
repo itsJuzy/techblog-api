@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const blogRouter = require("./routes/blogRoutes");
-app.use("/api/book", blogRouter);
+app.use("/api/blog", blogRouter);
 const authRouter = require("./routes/authRoutes");
 app.use("/api/auth", authRouter);
 
