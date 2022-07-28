@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
+    unique: true,
   },
   password: {
     type: String,
@@ -20,7 +21,7 @@ const userSchema = new mongoose.Schema({
   },
   blogList: {
     type: Array,
-    default: [null],
+    default: null,
   },
 });
 
