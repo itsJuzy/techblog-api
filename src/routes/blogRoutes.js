@@ -1,8 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const { getBlogs } = require("../controllers/blogController");
 
-router.get("/", (req, res) => {
-  res.status(200).json({ message: "reached end point" });
-});
+router.get("/", getBlogs);
 
 module.exports = router;

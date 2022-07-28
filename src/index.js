@@ -10,8 +10,6 @@ app.use(express.urlencoded({ extended: true }));
 
 const blogRouter = require("./routes/blogRoutes");
 app.use("/api/book", blogRouter);
-//const authorRouter = require("./routes/authorRoutes");
-//app.use("/api/author", authorRouter);
 
 app.listen(port, () => {
   console.log(`Server running in port ${port}`);
