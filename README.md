@@ -5,6 +5,7 @@ An RESTful API for a blog web application, created using ExpressJS, MongoDB &amp
 ## to start the server
 
 ```
+npm install
 npm run dev
 ```
 
