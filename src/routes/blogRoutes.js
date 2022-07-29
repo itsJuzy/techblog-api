@@ -12,7 +12,7 @@ const {
 router.post("/", createBlog);
 router.get("/all", getBlogs);
 router.get("/:id", getBlog);
-router.post("/ap/:id", approveBlog);
+router.patch("/approve/:id", approveBlog);
 router.patch("/:id", updateBlog);
 router.delete("/:id", deleteBlog);
 

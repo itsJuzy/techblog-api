@@ -4,7 +4,8 @@
   "description": "An RESTful API for a blog web application, created using ExpressJS, MongoDB & NodeJS",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/index.js"
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
   },
   "author": "",
   "license": "MIT",
