@@ -36,7 +36,7 @@ const getBlogs = async (req, res) => {
 
 const updateBlog = async (req, res) => {
   try {
-    const blog = await blog.findOne({ _id: req.params.id });
+    const blog = await Blog.findOne({ _id: req.params.id });
 
     if (req.body.title) blog.title = req.body.title;
 
@@ -62,7 +62,7 @@ const deleteBlog = async (req, res) => {
 
 const approveBlog = async (req, res) => {
   try {
-    const blog = await blog.findOne({ _id: req.params.id });
+    const blog = await Blog.findOne({ _id: req.params.id });
     console.log(blog);
     blog.isApproved = true;
 
